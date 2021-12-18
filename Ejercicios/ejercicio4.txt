@@ -1,0 +1,21 @@
+Jessica Cole [0,0] Robert Wallace [0,1]
+1. Inicio 
+2. (vendedores(2), x(50)[{A-Z}, {a-z}, {BS}])
+3. (ventas (2)(5), i[0-n])
+4. cadena, x(50)[{A-Z}, {a-z}, {BS}] <-- " "
+5. vendedores <-- {{"Jessica Cole", "Robert Wallace"}}
+6. cantidadventas, i[0-n] <-- 0
+7. dia, i[0-n] <--1
+7. ventas <-- {}
+8. Para(fila <-- 0, fila < 2, 1)haga 
+9. 	Para(columna<--0, columna<5, 1)haga
+10. 		Escribir "Ingresar las ventas que realizo: " + vendedores[fila] + " el" + num_dia
+11. 		leer cantidadventas
+12. 		ventas [fila][columna] <-- cantidadventas
+13.		suma <-- suma + cantidadventas
+14. 		dia <-- dia + 1
+14. 	Fin_Para
+15. 	cadena <-- cadena + "Vendedor(a) " + vendedores[fila]
+16. Fin_Para
+17. Escribir  "cadena + \n + Ha realizado un total de + suma + en ventas."
+18. Fin 
